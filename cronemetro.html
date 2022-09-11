@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="author" content="Fábio soares">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="Pesquisa, Empresas, Profissionais">
+  <meta name="reply-to" content="contato@buscar.net">
+  <meta name="descricao" content="Pesquise as informações do mundo, incluindo páginas da web. O Buscar tem muitos recursos especiais para ajudá-lo a encontrar exatamente o que procura." />
+  <meta itemprop="nome" content="Buscar"/>
+  <meta itemprop="descricao" content="Pesquise as informações do mundo, incluindo páginas da web. O Buscar tem muitos recursos especiais para ajudá-lo a encontrar exatamente o que procura." />
+  <meta property="og:url" content="https://buscar.net" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Buscar" />
+  <meta property="og:descricao" content="PPesquise as informações do mundo, incluindo páginas da web. O Buscar tem muitos recursos especiais para ajudá-lo a encontrar exatamente o que procura." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Buscar" />
+  <meta name="twitter:descricao" content="Pesquise as informações do mundo, incluindo páginas da web. O Buscar tem muitos recursos especiais para ajudá-lo a encontrar exatamente o que procura." />
+  <title>FASS Buscar | Cronômetro</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" >
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'> 
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/google-search.jpg" type="image/x-icon" />
+  <link rel="stylesheet" href="assets/css/style-cronometro.css" />
+  <script src="https://kit.fontawesome.com/3cfd63da1f.js"></script>
+</head>
+
+
+<body>
+  <header>
+    <nav>
+      <ul id="nav-imgs"> 
+        <li><a href="javascript:void(0);"><i class="fa-solid fa-home font-menu "></i></a></li>    
+        <li>
+          <label for="check-menu" id="menu-label"><i class="fa-solid fa-bars font-menu"></i>
+          </label>
+          <input type="checkbox" id="check-menu">
+          <div id="menu-itens">
+            <div class="item-menu">
+              <a href="busca">                
+                <span>Fass Busca</span>
+              </a>
+            </div>
+            <div class="item-menu">
+              <a href="calculadora">                
+                <span>Calculadora</span>
+              </a>
+            </div>
+            <div class="item-menu">
+              <a href="fin-do-ano">               
+                <span>Dias Para o Fim do Ano</span>
+              </a>
+            </div>
+            <div class="item-menu">
+              <a href="cronemetro">               
+                <span>Cronômetro</span>
+              </a>
+            </div>
+            <div class="item-menu">
+              <a href="gerador-senha">                
+                <span>Gerador de Senha</span>
+              </a>
+            </div>
+            <div class="item-menu">
+              <a href="lorem-ipsom">               
+                <span>Gerador de Texto</span>
+              </a>
+            </div>
+            
+            <div class="item-menu" id="more-menu">
+              <a href="javascript:void(0);"><span>Entrar</span></a>
+            </div>
+            <div class="item-menu" id="more-menu">
+              <a href="javascript:void(0);"><span>Registrar</span></a>
+            </div>
+          </div>
+          
+        </li>        
+      </ul>
+    </nav>
+  </header>
+
+  <main>   
+    <div class="intro">
+      <h1 class="intro__headline">Cronômetro</h1>
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-12">
+          </div>
+          <div class="col-12">
+             <h2 class="intervals">Alerta...</h2>
+            <h1 class="timer"></h1>
+            <button class="btn btn-dark start" type="button" name="button">Start</button>
+            <button class="btn btn-dark reset" type="button" name="button">Reset</button>
+          </div>
+          <div class="col-6 ">
+            <div class="">
+              <h2>Definir Tempo:</h2>
+            </div>
+            <div class="">
+              <button class="btn btn-dark work-up" type="button" name="button"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+              <h3 class="work"></h3>
+              <button class="btn btn-dark work-down" type="button" name="button"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+            </div>
+          </div>
+          <div class="col-12 order-3 " style="display: none;">
+            <div class="form-group col-sx-6">
+              <label for="exampleFormControlSelect1">Son o Alarme</label>
+              <select class="form-control mx-auto" id="exampleFormControlSelect1">
+                <option>Campainha</option>
+              </select>
+  
+            </div>
+            <div class="">
+                  <button class="btn btn-light play" type="button" name="play"><i class="fa fa-play" aria-hidden="true"></i></button>
+            </div>
+          </div>
+          <div class="col-6 order-2 ">
+            <div class="">
+              <h2>Repetir em:</h2>
+            </div>
+            <div class="">
+              <button class="btn btn-dark break-up" type="button" name="button"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+              <h3 class="break"></h3>
+              <button class="btn btn-dark break-down" type="button" name="button"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <section class="busca" id="busca">
+
+        <!-- anúncio-->
+        <article  class="busca-item" nome="?">
+        <div class="card">
+          <div class="card--hover"> 
+            <h3>FASS Reforma e Construção</h3>
+            <p>
+               Reforma e Construções Reidenciais e Comerciais</p><a href="#">ir site</a>
+          </div>
+        </div>
+        <div class="card ">
+          <div class="card--hover"> 
+            <h3>Mãos Que Trabalham</h3>
+            <p>Bolsas Artesanais de Fibra de Milho</p><a href="#">ir site</a>
+          </div>
+        </div>
+        <div class="card ">
+          <div class="card--hover"> 
+            <h3>Da Roça</h3>
+            <p>Direto da Roça Pra Você</p><a href="#">ir site</a>
+          </div>
+        </div>
+        </article>
+        <!--fim anúncio-->
+      </section>
+  </main>
+
+
+  <footer>
+    <ul id="footer-esquerda">
+      <li><a href="javascript:void(0);">Sobre</a>
+      </li>
+      <li><a href="javascript:void(0);">Publicidade</a>
+      </li>
+      <li><a href="javascript:void(0);">Negócios</a></li>
+    </ul>
+    <ul id="footer-direita">
+      <li><a href="javascript:void(0);">Privacidade</a></li>
+      <li><a href="javascript:void(0);">Termos</a></li>
+    </ul>
+  </footer>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.5/howler.core.min.js'></script>
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/script-cronometro.js"></script>
+
+</body>
+
+</html>

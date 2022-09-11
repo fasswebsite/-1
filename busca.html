@@ -1,0 +1,136 @@
+<html lang="pt-BR">
+<head>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+	<title id="title">FASS Busca </title>
+
+	<link rel="shortcut icon" href="assets/img/google-search.jpg" type="image/x-icon" />
+	<link rel="stylesheet" href="assets/css/base.css" type="text/css">
+	<link href="assets/css/inter.css" rel="stylesheet" type="text/css">
+
+	<script src="https://kit.fontawesome.com/3cfd63da1f.js" crossorigin="anonymous"></script>
+	<script src="assets/js/jquery-1.4.2.min.js"></script>
+	<script src="assets/js/tools.js"></script>
+	<script src="assets/js/scripts.js"></script>
+	<script src="assets/js/base.js"></script>
+
+</head>
+<body>
+
+	<header>
+		<nav>
+			<ul id="nav-imgs">  
+			  <li><a href="javascript:void(0);"><i class="fa-solid fa-home font-menu "></i></a></li>   
+			  <li>
+				<label for="check-menu" id="menu-label"><i class="fa-solid fa-bars font-menu"></i>
+				</label>
+				<input type="checkbox" id="check-menu">
+				<div id="menu-itens">
+				  <div class="item-menu">
+					<a href="busca">                
+					  <span>Fass Busca</span>
+					</a>
+				  </div>
+				  <div class="item-menu">
+					<a href="calculadora">                
+					  <span>Calculadora</span>
+					</a>
+				  </div>
+				  <div class="item-menu">
+					<a href="fin-do-ano">               
+					  <span>Dias Para o Fim do Ano</span>
+					</a>
+				  </div>
+				  <div class="item-menu">
+					<a href="cronemetro">               
+					  <span>Cronômetro</span>
+					</a>
+				  </div>
+				  <div class="item-menu">
+					<a href="gerador-senha">                
+					  <span>Gerador de Senha</span>
+					</a>
+				  </div>
+				  <div class="item-menu">
+					<a href="lorem-ipsom">               
+					  <span>Gerador de Texto</span>
+					</a>
+				  </div>
+				  
+				  <div class="item-menu" id="more-menu">
+					<a href="javascript:void(0);"><span>Entrar</span></a>
+				  </div>
+				  <div class="item-menu" id="more-menu">
+					<a href="javascript:void(0);"><span>Registrar</span></a>
+				  </div>
+				</div>
+				
+			  </li>        
+			</ul>
+		</nav>
+	</header>
+	
+	<main>
+		<div id="gradient"></div>	
+		<div id="engines"></div>
+
+		<div id="container">
+			<form id="form" onsubmit="return doSearch()">
+				<div id="input"><input id="i" type="text" autocomplete="off" spellcheck="false" placeholder="Digite Sua Busca"/></div>
+				<a onclick="nextLanguage()" id="lang"></a>
+				<ul id="sugs"></ul>
+			</form>
+
+			<p id="method"></p>
+		</div>
+
+		<section class="busca" id="busca" >
+			<!-- anúncio-->
+			<article  class="busca-item" nome="?">
+			<div class="card">
+			<div class="card--hover"> 
+				<h3>FASS Reforma e Construção</h3>
+				<p>
+				Reforma e Construções Reidenciais e Comerciais</p><a href="#">Ir Site</a>
+			</div>
+			</div>
+			<div class="card ">
+			<div class="card--hover"> 
+				<h3>Mãos Que Trabalham</h3>
+				<p>Bolsas Artesanais de Fibra de Milho</p><a href="#">Ir Site</a>
+			</div>
+			</div>
+			<div class="card ">
+			<div class="card--hover"> 
+				<h3>Da Roça</h3>
+				<p>Direto da Roça Pra Você</p><a href="#">Ir Site</a>
+			</div>
+			</div>
+			<div class="card card--dark">
+			<div class="card--hover"> 
+				<h3>ESArtCroche</h3>
+				<p>Tapetes, Jogos e Suplas em Croche</p><a href="#">Ir Site</a>
+			</div>
+			</div>
+			</article>
+			<!--fim anúncio-->		
+		</section>
+	</main>
+
+	<footer>
+		<ul id="footer-esquerda">
+		  <li><a href="javascript:void(0);">Sobre</a>
+		  </li>
+		  <li><a href="javascript:void(0);">Publicidade</a>
+		  </li>
+		  <li><a href="javascript:void(0);">Negócios</a></li>
+		</ul>
+		<ul id="footer-direita">
+		  <li><a href="javascript:void(0);">Privacidade</a></li>
+		  <li><a href="javascript:void(0);">Termos</a></li>
+		</ul>
+	</footer>
+</body>
+
+
+
+</html>
