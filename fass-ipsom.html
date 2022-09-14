@@ -19,11 +19,9 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Buscar" />
   <meta name="twitter:descricao" content="Pesquise as informações do mundo, incluindo páginas da web. O Buscar tem muitos recursos especiais para ajudá-lo a encontrar exatamente o que procura." />
-  <title>FASS Busca | Gerador de Senha</title>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap'>
+  <title>FASS Busca | Lorem Ipsom</title>
   <link rel="shortcut icon" href="assets/img/google-search.jpg" type="image/x-icon" />
-  <link rel="stylesheet" href="assets/css/style-senha.css" />
+  <link rel="stylesheet" href="assets/css/style-ipsom.css" />
   <script src="https://kit.fontawesome.com/3cfd63da1f.js"></script>
 </head>
 
@@ -31,8 +29,8 @@
 <body>
   <header>
     <nav>
-      <ul id="nav-imgs"> 
-        <li><a href="javascript:void(0);"><i class="fa-solid fa-home font-menu "></i></a></li>    
+      <ul id="nav-imgs">   
+        <li><a href="javascript:void(0);"><i class="fa-solid fa-home font-menu "></i></a></li>  
         <li>
           <label for="check-menu" id="menu-label"><i class="fa-solid fa-bars font-menu"></i>
           </label>
@@ -41,11 +39,6 @@
             <div class="item-menu">
               <a href="busca">                
                 <span>Fass Busca</span>
-              </a>
-            </div>
-            <div class="item-menu">
-              <a href="calculadora">                
-                <span>Calculadora</span>
               </a>
             </div>
             <div class="item-menu">
@@ -59,21 +52,13 @@
               </a>
             </div>
             <div class="item-menu">
-              <a href="gerador-senha">                
-                <span>Gerador de Senha</span>
-              </a>
-            </div>
-            <div class="item-menu">
-              <a href="lorem-ipsom">               
+              <a href="javascript:void(0);">               
                 <span>Gerador de Texto</span>
               </a>
             </div>
             
             <div class="item-menu" id="more-menu">
-              <a href="javascript:void(0);"><span>Entrar</span></a>
-            </div>
-            <div class="item-menu" id="more-menu">
-              <a href="javascript:void(0);"><span>Registrar</span></a>
+              <a href="https://www.fass.website"><span>Home</span></a>
             </div>
           </div>
           
@@ -83,42 +68,18 @@
   </header>
 
   <main>   
-    <h1 class="title">Gerador de Senhas</h1>
-    <div class="container">
-      <div class="result">
-        <div class="result__title field-title">Gerador de Senhas</div>
-        <div class="result__info right">click para copiar</div>
-        <div class="result__info left">copiado</div>
-        <div class="result__viewbox" id="result">CLICK Para Gerar</div>
-        <button id="copy-btn" style="--x: 0; --y: 0"><i class="far fa-copy"></i></button>
-      </div>
-      <div class="length range__slider" data-min="4" data-max="32">
-        <div class="length__title field-title" data-length='0'>Tamanho:</div>
-        <input id="slider" type="range" min="4" max="32" value="16" />
-      </div>
-    
-      <div class="settings">
-        <span class="settings__title field-title">Definições</span>
-        <div class="setting">
-          <input type="checkbox" id="uppercase" checked />
-          <label for="uppercase">Incluir Caixa Alta</label>
-        </div>
-        <div class="setting">
-          <input type="checkbox" id="lowercase" checked />
-          <label for="lowercase">Incluir Caixa Baixa</label>
-        </div>
-        <div class="setting">
-          <input type="checkbox" id="number" checked />
-          <label for="number">Incluir Número</label>
-        </div>
-        <div class="setting">
-          <input type="checkbox" id="symbol" />
-          <label for="symbol">Incluir Simbolos</label>
-        </div>
-      </div>
-    
-      <button class="btn generate" id="generate">Gerar de Senha</button>
-    </div>
+    <section class="section-center">
+      <h3 class="lorem-h3">Buscar Ipsom </h3>
+      <form class="lorem-form">
+        <label for="amout">Preciso de: </label>
+        <input type="number" name="amount" id="amount" placeholder="1">
+        <label for="amout">paragrafos</label>
+        <button class="btn" type="submit">Gerar Texto</button>
+      </form>
+      <article class="lorem-text">
+
+      </article>
+    </section>
 
     <section class="busca" id="busca">
 
@@ -144,9 +105,11 @@
         </div>
       </div>
       </article>
-      <!--fim anúncio-->    
+      <!--fim anúncio-->
     </section>
   </main>
+
+
 
   <footer>
     <ul id="footer-esquerda">
@@ -163,7 +126,7 @@
   </footer>
 
   <script src="assets/js/script.js"></script>
-  <script src="assets/js/script-senha.js"></script>
+  <script src="assets/js/app-ipsom.js"></script>
 
 </body>
 

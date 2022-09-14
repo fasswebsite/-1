@@ -12,10 +12,11 @@ html {
   font-family: Arial, sans-serif;
 }
 body{
-  background: linear-gradient(rgba(39, 31, 26, 0.979), rgba(23, 38, 44, 0.952)), url("../img/background/background.png");
-	background-attachment: fixed;
-	background-position: center;
-	background-size: cover;
+	background: #1F1F1F;
+	background: linear-gradient(rgba(39, 31, 26, 0.952), rgba(15, 26, 31, 0.979)), url("../img/background.png");
+	  background-attachment: fixed;
+	  background-position: center;
+	  background-size: cover;
 }
 
 header {
@@ -96,7 +97,7 @@ nav img {
   padding: 10px;
 }
 .item-menu:hover {
-  background-image: url('../img/background.png');
+  text-decoration: none;
 }
 .item-menu span {
   margin: 5px 0px 0px 0px;
