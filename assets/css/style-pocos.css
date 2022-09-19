@@ -167,9 +167,21 @@ h1 {
   max-width: 400px;
   min-height: 92px;
   max-height: 92px;
-  margin-bottom: 25px;
   line-height: 100px;
   font-size: 5em;
+  color: #ffffff;
+  font-family: 'Abril Fatface', cursive;
+}
+.texto-cidades{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 400px;
+  min-height: 92px;
+  max-height: 92px;
+  margin-bottom: 30px;
+  line-height: 100px;
+  font-size: 3em;
   color: #ffffff;
   font-family: 'Abril Fatface', cursive;
 }
@@ -320,7 +332,6 @@ h2.busca-titulo-3{
 .anuncio img{
   width: 250px;
   height: 110px;
-  margin: 10px;
 }
 .card--hover h3 {
   font-size: 15px;
@@ -402,6 +413,49 @@ footer a {
 }
 
 
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+  width: 250px;
+  height: 110px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
 
 
 

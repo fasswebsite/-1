@@ -9,23 +9,10 @@
 
 body {
   background: #1F1F1F;
-  background: linear-gradient(rgba(39, 31, 26, 0.952), rgba(15, 26, 31, 0.979)), url("../img/background.png");
+  background: linear-gradient(rgba(39, 31, 26, 0.938), rgba(15, 22, 26, 0.932)), url("../img/background.png");
 	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
-}
-.btn{
-  background-color: rgba(0, 0, 0, 0.062);
-  font-size: 30px;
-  border: none;
-  top: 15px;
-  float: right; 
-  right: 20px;
-position: relative;
-}
-.btn:hover{
-  background: none;
-  border: none;
 }
 header {
   margin: 6px;
@@ -36,6 +23,12 @@ nav {
   display: flex;
   margin-left: auto;
 }
+
+
+nav img {
+  height: 24px;
+  width: 24px;
+}
 /* MENU */
 
 #menu-label {
@@ -45,22 +38,20 @@ nav {
   display: none;
 }
 #menu-itens {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin: 5px 0px 0px 0px;
-  background: rgba(51, 50, 50, 0.842);
+  background: rgba(255, 255, 255, 0.959);
   position: absolute;
-  border-radius: 5px;
+  border-radius: 4px;
   flex-wrap: wrap;
   display: none;
-  width: 200px;
+  width: 180px;
   right: 10px;
 }
 .font-menu{
   font-size:xx-large;
   color: #ffff;
-  padding-right: 30px;
+  margin-right: 40px;
+  margin-top: 10px;
 
 }
 #check-menu:checked + #menu-itens {
@@ -72,9 +63,6 @@ nav {
   z-index: 9999;
 }
 .item-menu a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
   border-radius: 4px;
   cursor: pointer;
@@ -82,34 +70,20 @@ nav {
   display: flex;
   padding: 10px;
 }
-.item-menu a:hover {
-  color: #fff;
+.item-menu:hover {
+  text-decoration: none;
 }
 .item-menu span {
-  margin: 2px 0px 0px 0px;
+  margin: 5px 0px 0px 0px;
   font-size: .8em;
-  color: #fff;
+  color: #000;
 }
-#more-menu:hover {
-  background: transparent;
-  text-decoration: none;
+.item-menu img {
+  height: auto;
+  width: 38px;
 }
-#more-menu span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  border: 1px solid #c9ccd3;
-  margin-left: -10px;
-  border-radius: 4px;
-  padding: 3px 35px;
-  max-width: 50px;
-  color: #fff;
-  font-size: .8em;
-  text-decoration: none;
-}
-
-/* END Menu */
+  
+  /* END Menu */
 
 
 

@@ -20,7 +20,7 @@
   <meta name="twitter:title" content="Buscar" />
   <meta name="twitter:descricao" content="Pesquise as informações do mundo, incluindo páginas da web. O Buscar tem muitos recursos especiais para ajudá-lo a encontrar exatamente o que procura." />
   <title>FASS Busca</title>
-  <link rel="shortcut icon" href="assets/img/google-search.jpg" type="image/x-icon" />
+  <link rel="shortcut icon" href="../assets/img/fass-search.jpg" type="image/x-icon" />
   <link rel="stylesheet" href="../assets/css/style-pocos.css" />
   <script src="https://kit.fontawesome.com/3cfd63da1f.js"></script>
 </head>
@@ -41,11 +41,6 @@
               </a>
             </div>
             <div class="item-menu">
-              <a href="calculadora">                
-                <span>Calculadora</span>
-              </a>
-            </div>
-            <div class="item-menu">
               <a href="fin-do-ano">               
                 <span>Dias Para o Fim do Ano</span>
               </a>
@@ -56,21 +51,13 @@
               </a>
             </div>
             <div class="item-menu">
-              <a href="gerador-senha">                
-                <span>Gerador de Senha</span>
-              </a>
-            </div>
-            <div class="item-menu">
               <a href="lorem-ipsom">               
                 <span>Gerador de Texto</span>
               </a>
             </div>
             
             <div class="item-menu" id="more-menu">
-              <a href="javascript:void(0);"><span>Entrar</span></a>
-            </div>
-            <div class="item-menu" id="more-menu">
-              <a href="javascript:void(0);"><span>Registrar</span></a>
+              <a href="https://www.fass.website"><span>Home</span></a>
             </div>
           </div>
           
@@ -80,10 +67,11 @@
   </header>
 
   <main>   
-    <h1>FASS Busca</h1> 
+    <h1>FASS ANÚNCIO </h1> 
+    <h2 class="texto-cidades">Poços de Caldas</h2>
     <form id="f1" action="" method="GET" class="pesquisa">      
       <label class="search-box" for="search">
-        <img src="./assets/img/google-search.jpg" alt="search"/>
+        <img src="../assets/img/fass-search.jpg" alt="search"/>
         <input type="text" name="q" id="search" search="busca" list="buscador" placeholder="Buscar em Poços de Caldas" />        
       </label>    
       <datalist id="buscador">
@@ -103,7 +91,18 @@
       <!-- anúncio-->
       <article  class="busca-item" nome="?">
       <div class="anuncio">         
-          <a href="#"><img src="assets/img/anuncios/gustavo.png" alt=""></a>        
+          <a href="#"><img src="../assets/img/anuncios/gustavo.png" alt=""></a>        
+      </div>
+      <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+        <div class="flipper">
+          <div class="front">
+            <img src="../assets/img/anuncios/gustavo.png" alt="">
+          </div>
+          <div class="back">
+            <img src="../assets/img/wikipedia.png" alt="">
+          </div>
+        </div>       
+                  
       </div>
       <div class="card ">
         <div class="card--hover"> 

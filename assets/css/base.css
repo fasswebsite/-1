@@ -12,7 +12,6 @@ html {
   font-family: Arial, sans-serif;
 }
 body{
-	background: #1F1F1F;
 	background: linear-gradient(rgba(39, 31, 26, 0.952), rgba(15, 26, 31, 0.979)), url("../img/background.png");
 	  background-attachment: fixed;
 	  background-position: center;
