@@ -9,7 +9,7 @@
 
 body {
   background: #1F1F1F;
-  background: linear-gradient(rgba(39, 31, 26, 0.938), rgba(15, 22, 26, 0.932)), url("../img/background.png");
+  background: linear-gradient(rgba(39, 31, 26, 0.863), rgba(26, 39, 46, 0.904)), url("../img/background.png");
 	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
@@ -93,11 +93,10 @@ h1 {
   justify-content: center;
   margin: 0 auto;
   margin-top: 10px;
-  max-width: 600px;
-  min-height: 92px;
-  max-height: 92px;
+  width: 50%;
+  height: 92px;
   line-height: 100px;
-  font-size: 3em;
+  font-size: 2em;
   color: #ffffff;
   font-family: 'Abril Fatface', cursive;
 }
@@ -105,7 +104,7 @@ h1 {
 .mapa {
   width: 100%;
   margin-top: 20px;
-  left: -90px;
+  left: 10px;
 }
 .mapa svg#mapa-svg {
   width: 100%;
@@ -127,10 +126,17 @@ h1 {
 }
 
 .boxes {
-  width: 80%;
-  margin-top: 100px;
+  width: 100%;
+  height: 400px;
+  margin-top: 0px;
+  border: 1px solid #ccc;
+  padding: 40px;
+  background-color: #0000001f;
+  overflow: scroll;
+
 }
 select{
+  width: 60%;
   background: rgba(92, 88, 88, 0.192);
   color: #fff;
   padding: 5px;
@@ -138,9 +144,11 @@ select{
 .boxes h4 {
   margin-top: 30px;
   margin-bottom: 30px;
+  font-size: 1.1em;
   color: #fff;
 }
 .boxes .box {
+  width: 70%;
   display: none;
   opacity: 0;
   transition: all 0.3s ease-in-out;
@@ -151,6 +159,7 @@ select{
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 10px;
+  font-size: 1em;
 }
 .boxes .box.on {
   opacity: 1;
@@ -167,4 +176,213 @@ select{
 }
 .cidades-ul a:hover{
   color: #70706d;
+}
+
+footer {
+  display: flex;
+  background: linear-gradient(rgba(39, 31, 26, 0.979), rgba(23, 38, 44, 0.952));
+  border-top: 0.5px solid #77787a;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: #6f6f6f;
+  font-size: 13px;
+}
+
+#footer-direita {
+  margin-left: auto;
+}
+
+#footer-esquerda {
+  margin-right: auto;
+  margin-left: 20px;
+}
+
+footer ul {
+  display: flex;
+  margin: 5px;
+  list-style: none;
+}
+
+footer a {
+  color: #6f6f6f;
+  margin: 15px;
+}
+footer a:hover{
+  text-decoration: underline;
+  color: #6f6f6f;
+}
+
+@media (max-width: 759px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+  }
+
+  #footer-direita {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #footer-esquerda {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+
+/* media */
+
+@media screen and (max-width: 767px){
+  h1 {
+    width: 50%;
+    height: 72px;
+    line-height: 70px;
+    font-size: 1.5em;
+    color: #ffffff;
+    font-family: 'Abril Fatface', cursive;
+  }
+
+  .boxes {
+    width: 100%;
+    height: 500px;
+    margin-top: -530px;
+   padding: 40px;
+   background-color: #0000002f;
+  
+  }
+  .boxes h4 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  .boxes .box h3 {
+    margin-bottom: 40px;
+    font-size: 1.5em;
+  }
+
+}
+
+@media screen and (max-width: 575px){
+  h1 {  
+    font-size: 1.3em;
+  }
+
+  .boxes {   
+   margin-left: 50px;
+   margin-right: 50px;  
+  }
+
+}
+
+@media screen and (max-width: 500px){
+  h1 {  
+    font-size: 1.2em;
+  }
+
+  .boxes {
+    margin-top: -500px;    
+  }
+
+}
+
+@media screen and (max-width: 480px){
+  h1 {  
+    font-size: 1.2em;
+  }
+
+  .boxes {
+    margin-top: -480px;    
+  }
+
+}
+@media screen and (max-width: 459px){
+  h1 {  
+    font-size: 1.2em;
+  }
+
+  .boxes {
+    margin-top: -450px;    
+  }
+
+}
+@media screen and (max-width: 435px){
+  h1 {  
+    font-size: 1.2em;
+  }
+
+  .boxes {
+    margin-top: -420px;    
+  }
+
+}
+@media screen and (max-width: 399px){
+  h1 {  
+    width: 50%;
+    height: 52px;
+    font-size: 1em;
+    line-height: 50px;
+  }
+
+  .boxes {
+    margin-top: -370px;  
+    margin-left: 30px;
+    margin-right: 30px;   
+  }
+
+  select{
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 358px){  
+
+  .boxes {
+    margin-top: -340px;    
+  }
+  .boxes p{
+    font-size: 12px;
+  }
+  .boxes h4 {
+    font-size: 1em;
+    line-height: 25px;
+  }
+  .cidades-ul{
+    margin-left: 5px;
+  }
+  .cidades-ul a{
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 330px){
+  h1 {  
+    width: 80%;
+    height: 52px;
+    font-size: 1em;
+    line-height: 50px;
+  }
+
+  .boxes {
+    margin-top: -300px;    
+  }
+  .cidades-ul{
+    margin-left: 10px;
+  }
+  .cidades-ul a{
+    font-size: 13px;
+  }
+
+}
+@media screen and (max-width: 324px){
+ 
+ 
+  .cidades-ul{
+    margin-left: 5px;
+  }
+  .cidades-ul a{
+    font-size: 12px;
+  }
+
 }

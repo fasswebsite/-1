@@ -13,7 +13,7 @@ html {
   font-family: Arial, sans-serif;
 }
 body{
-  background: linear-gradient(rgba(39, 31, 26, 0.979), rgba(23, 38, 44, 0.952)), url("../img/background/background.png");
+  background: linear-gradient(rgba(39, 31, 26, 0.952), rgba(27, 51, 61, 0.548)), url("https://images.unsplash.com/photo-1665935421376-062b11889523?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1029&q=80");
 	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
@@ -100,9 +100,6 @@ nav img {
   flex: 1 1 auto;
   display: flex;
   padding: 10px;
-}
-.item-menu:hover {
-  background-image: url('../img/background.png');
 }
 .item-menu span {
   margin: 5px 0px 0px 0px;
@@ -373,11 +370,12 @@ h2.busca-titulo-3{
 
 footer {
   display: flex;
-  background: linear-gradient(rgba(39, 31, 26, 0.979), rgba(23, 38, 44, 0.952)), url("../img/background/background.png");
+  background: linear-gradient(rgba(39, 31, 26, 0.979), rgba(23, 38, 44, 0.952));
   border-top: 0.5px solid #77787a;
   position: fixed;
   bottom: 0;
   width: 100%;
+  color: #6f6f6f;
 }
 
 #footer-direita {
