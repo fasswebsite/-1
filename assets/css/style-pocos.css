@@ -44,7 +44,7 @@ li {
 a {
   font-size: 1.2rem;
   text-decoration: none;
-  color: #000000;
+  color: #666262;
 }
 
 a:hover {
@@ -242,9 +242,7 @@ main img {
 }
 
 section{
-  width: 100%;
-  flex-direction: row;
-  -webkit-flex-flow: row wrap;
+  width: 100%; 
   align-items: center;
   justify-content: center;
   margin: 0 auto;
@@ -252,14 +250,12 @@ section{
 }
 article{
   width: 90%;
-  display: flex;
-  flex-direction: row;
-  -webkit-flex-flow: row wrap;
+  display: flex; 
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content:space-evenly;
   margin: 0 auto;
   margin-bottom: 150px;
-  padding: 10px 20px;
 }
 h2{
   width: 100%;
@@ -326,10 +322,17 @@ h2.busca-titulo-3{
   transition: 0.25s ease;
 }
 .anuncio img{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   width: 280px;
   height: 160px;
-  padding: 10px 10px;
+ padding: 20px 10px;
   margin-top: -5px;
+  transition: 1s ease
+}
+.anuncio img:hover{
+  transform: scale(2);
 }
 .card--hover h3 {
   font-size: 15px;
@@ -429,7 +432,7 @@ footer a {
 
 /* flip speed goes here */
 .flipper {
-	transition: 0.6s;
+	transition: 0.5s ;
 	transform-style: preserve-3d;  
 	position: relative;
   cursor: pointer;
@@ -438,8 +441,7 @@ footer a {
 /* hide back of pane during swap */
 .front, .back {
 	backface-visibility: hidden;
-
-	position: absolute;
+  position: absolute;
 	top: 0;
 	left: 0;
 }
@@ -448,7 +450,7 @@ footer a {
 .front {
 	z-index: 2;
 	/* for firefox 31 */
-	transform: rotateY(0deg);
+	transform:  rotateY(0deg);
 }
 
 /* back, initially hidden pane */
