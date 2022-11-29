@@ -22,6 +22,7 @@
   <title>FASS Busca</title>
   <link rel="shortcut icon" href="../assets/img/fass-search.jpg" type="image/x-icon" />
   <link rel="stylesheet" href="../assets/css/style-pocos.css" />
+  <link rel="stylesheet" href="../assets/css/modal.css">
   <script src="https://kit.fontawesome.com/3cfd63da1f.js"></script>
 </head>
 
@@ -87,6 +88,7 @@
         <option value="construcao"></option>
         <option value="casa e Jardim"></option>
         <option value="moveis"></option>
+        <option value="motos"></option>
         <option value="calcados"></option>
         <option value="servicos"></option>
         <option value="lojas"></option>
@@ -98,21 +100,21 @@
 
       <!-- anúncio-->
         <article  class="busca-item" nome="?">
-        <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
-          <div class="flipper">
-            <div class="front">
-              <img src="../assets/img/anuncios/pocos/cloude-1.jpg" alt="">
-            </div>
-            <div class="back">
-              <a href=""><img src="../assets/img/anuncios/pocos/cloude-2.jpg" alt=""></a>
-            </div>
-          </div>                           
-        </div>
 
         <div class="anuncio">         
-            <a href="#"><img src="../assets/img/anuncios/pocos/gustavo.png" alt=""></a>        
+            <a href="#openModal"><img src="../assets/img/anuncios/pocos/gustavo.png" alt=""></a> 
+            <!-- Modal -->
+            <div id="openModal" class="modalbg">
+              <div class="dialog">
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Gustavo Gesso</h2>
+                <p><a href="tel:14998643039">Fone: (014) 99864-3039</a></p>
+                <p><a href="https://api.whatsapp.com/send?phone=5535992084791&text=Ol%C3%A1%20Gustavo!%20eu%20gostaria%20de%20fazer%20um%20or%C3%A7amento%2C%20consegui%20seu%20contato%20pelo%20site%20de%20divulga%C3%A7%C3%A3o%20FASS-Divulga%C3%A7%C3%A3o" target="_blank">WhatsApp: (35) 99208-4791</a></p>
+                <p><a href="https://api.whatsapp.com/send?phone=5535999421531&text=Ol%C3%A1%20Gustavo!%20eu%20gostaria%20de%20fazer%20um%20or%C3%A7amento%2C%20consegui%20seu%20contato%20pelo%20site%20de%20divulga%C3%A7%C3%A3o%20FASS-Divulga%C3%A7%C3%A3o" target="_blank">WhatsApp: (35) 99242-1531</a></p>
+              </div>
+            </div>
+            <!-- /Modal -->            
         </div>
-
         <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
           <div class="flipper">
             <div class="front">
@@ -123,7 +125,6 @@
             </div>
           </div>                      
         </div>
-
         <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
           <div class="flipper">
             <div class="front">
@@ -134,40 +135,21 @@
             </div>
           </div>                           
         </div>
-
-        <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
-          <div class="flipper">
-            <div class="front">
-              <img src="../assets/img/anuncios/pocos/alphabras-1.jpg" alt="">
-            </div>
-            <div class="back">
-              <a href=""><img src="../assets/img/anuncios/pocos/alphabras-2.jpg" alt=""></a>
-            </div>
-          </div>                           
-        </div>
-
         <div class="card ">
           <div class="card--hover"> 
             <h3>Mãos Que Trabalham</h3>
             <p>Trabalhos artesanais de sacolas, cestas, supĺas, feitas com palhas de milhos, lindas e resistentes</p><a href="#">Ir Site</a>
           </div>
         </div>
-
         <div class="card card--dark">
           <div class="card--hover"> 
             <h3>ESArteCroche</h3>
             <p>Tapetes, Jogos de cozinha e banheiro, e Suplas em Croche</p><a href="#">Ir Site</a>
           </div>
         </div>
-
         <div class="anuncio">         
           <a href="#"><img src="../assets/img/anuncios/pocos/frigel.jpg" alt=""></a>        
         </div>
-
-        <div class="anuncio">         
-          <a href="#"><img src="../assets/img/anuncios/pocos/glacial.jpg" alt=""></a>        
-        </div>
-
         <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
           <div class="flipper">
             <div class="front">
@@ -178,15 +160,9 @@
             </div>
           </div>                           
         </div> 
-
-        <div class="anuncio">         
-          <a href="#"><img src="../assets/img/anuncios/pocos/godoi-despachante.jpg" alt=""></a>        
-        </div>
-
         <div class="anuncio">         
           <a href="#"><img src="../assets/img/anuncios/pocos/guaramaq.jpg" alt=""></a>        
         </div>
-
         <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
           <div class="flipper">
             <div class="front">
@@ -197,36 +173,29 @@
             </div>
           </div>                           
         </div>
-
-        <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
-          <div class="flipper">
-            <div class="front">
-              <img src="../assets/img/anuncios/pocos/infinity-1.jpg" alt="">
-            </div>
-            <div class="back">
-              <a href=""><img src="../assets/img/anuncios/pocos/infinity-2.jpg" alt=""></a>
-            </div>
-          </div>                           
-        </div>
-
-        <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
-          <div class="flipper">
-            <div class="front">
-              <img src="../assets/img/anuncios/pocos/inova-1.jpg" alt="">
-            </div>
-            <div class="back">
-              <a href=""><img src="../assets/img/anuncios/pocos/inova-2.jpg" alt=""></a>
-            </div>
-          </div>                           
-        </div>
-
         <div class="anuncio">         
           <a href="#"><img src="../assets/img/anuncios/pocos/jc-casa-de-couro.jpg" alt=""></a>        
         </div>
         </article>
         <!--fim anúncio-->
     
-    
+        <article class="busca-item" nome="motos">
+          <h2 >Motos</h2>    
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/agrotorno-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href="#"><img src="../assets/img/anuncios/pocos/agrotorno-2.jpg" alt=""></a>
+              </div>
+            </div>                                  
+          </div> 
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/ls-musicacademia.jpg" alt=""></a>        
+          </div>
+        </article>
+        
         <article class="busca-item" nome="profissionais">
           <h2 >Profissionais</h2>
           <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
@@ -249,6 +218,12 @@
               </div>
             </div>                           
           </div> 
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/ls-musicacademia.jpg" alt=""></a>        
+          </div>
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/adami-consutoriajuridica.jpg" alt=""></a>        
+          </div>
           <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
             <div class="flipper">
               <div class="front">
@@ -259,9 +234,42 @@
               </div>
             </div>                           
           </div> 
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/studio156-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/studio156-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div> 
           <div class="anuncio">         
             <a href="#"><img src="../assets/img/anuncios/pocos/chaveiro-alerta.jpg" alt=""></a>        
           </div>
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/zaina-dias.jpg" alt=""></a>        
+          </div>
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/elua-gonsalves-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/elua-gonsalves-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div> 
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/diego-salvetti-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/diego-salvetti-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div> 
           <div class="anuncio">         
             <a href="#"><img src="../assets/img/anuncios/pocos/csj-construcao.jpg" alt=""></a>        
           </div> 
@@ -275,6 +283,15 @@
               </div>
             </div>                           
           </div>
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/paulinho-professor.jpg" alt=""></a>        
+          </div>
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/pica-pau-antenas.jpg" alt=""></a>        
+          </div>
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/jc-couro.jpg" alt=""></a>        
+          </div>
           <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
             <div class="flipper">
               <div class="front">
@@ -284,6 +301,9 @@
                 <a href=""><img src="../assets/img/anuncios/pocos/nf-2.jpg" alt=""></a>
               </div>
             </div>                           
+          </div>
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/miller-sousa.jpg" alt=""></a>        
           </div>
           <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
             <div class="flipper">
@@ -299,11 +319,92 @@
             <a href="#"><img src="../assets/img/anuncios/pocos/clodoaldo.jpg" alt=""></a>        
           </div>
           <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/lucasborges-dj.jpg" alt=""></a>        
+          </div>
+          <div class="anuncio">         
             <a href="#"><img src="../assets/img/anuncios/pocos/marquinho-assistencia.jpg" alt=""></a>        
           </div>
           <div class="anuncio">         
             <a href="#"><img src="../assets/img/anuncios/pocos/bluesun.jpg" alt=""></a>        
           </div> 
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/marcelo-miranda-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/marcelo-miranda-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div> 
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/barbearia-12-horas-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/barbearia-12-horas-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div> 
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/mariinha-costura.jpg" alt=""></a>        
+          </div>
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/jose-carlos-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/jose-carlos-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div> 
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/heder-jose-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/heder-jose-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div> 
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/jhs-2.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/jhs-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div> 
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/av-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/av-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div> 
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/aws.jpg" alt=""></a>        
+          </div>
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/gg-tecelage.jpg" alt=""></a>        
+          </div>
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/cc-massagista.jpg" alt=""></a>        
+          </div>
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/max-carpinteiro.jpg" alt=""></a>        
+          </div>
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/gabriel.jpg" alt=""></a>        
+          </div>
         </article>
     
         <article class="busca-item" nome="alimentos">
@@ -341,6 +442,19 @@
               </div>
             </div>                           
           </div>
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/pipocaldas-emporio.jpg" alt=""></a>        
+          </div>
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/boibravo-comidacaseira-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/boibravo-comidacaseira-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div>
           <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
             <div class="flipper">
               <div class="front">
@@ -350,6 +464,18 @@
                 <a href=""><img src="../assets/img/anuncios/pocos/santa-pizza-2.jpg" alt=""></a>
               </div>
             </div>                           
+          </div>
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/ki-acai.jpg" alt=""></a>        
+          </div>
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/coronel-lanches.jpg" alt=""></a>        
+          </div>
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/canarios.jpg" alt=""></a>        
+          </div>
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/fer-marmitex.jpg" alt=""></a>        
           </div>
         </article>
 
@@ -487,6 +613,9 @@
               </div>
             </div>                           
           </div>
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/planetas-motos.jpg" alt=""></a>        
+          </div>
           <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
             <div class="flipper">
               <div class="front">
@@ -519,6 +648,64 @@
           </div>
           <div class="anuncio">         
             <a href="#"><img src="../assets/img/anuncios/pocos/imperio-veiculo.jpg" alt=""></a>        
+          </div>
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/pocos-partes.jpg" alt=""></a>        
+          </div>
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/sap.jpg" alt=""></a>        
+          </div>
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/via-mondo-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/via-mondo-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div>
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/jp-mquinas.jpg" alt=""></a>        
+          </div>
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/cobap-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/cobap-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div>
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/luporini.jpg" alt=""></a>        
+          </div>
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/mecanica-gordo.jpg" alt=""></a>        
+          </div>
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/casa-prado-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/casa-colas-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div>
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/big-motos-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/big-motos-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div>
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/big-motos.jpg" alt=""></a>        
           </div>
         </article>
 
@@ -598,6 +785,16 @@
               </div>
             </div>                           
           </div>
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/reluzdente-1.png" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/reluzdente-2.png" alt=""></a>
+              </div>
+            </div>                           
+          </div>
         </article>
     
         <article class="busca-item" nome="roupas">
@@ -655,10 +852,32 @@
               </div>
             </div>                           
           </div>
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/mariinha-costura.jpg" alt=""></a>        
+          </div>
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/via-fight.jpg" alt=""></a>        
+          </div>
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/tudo-d-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/tudo-d-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div>
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/cleo-brecho.jpg" alt=""></a>        
+          </div>
         </article>
     
         <article class="busca-item" nome="beleza">
           <h2 >Beleza</h2>
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/zaina-dias.jpg" alt=""></a>        
+          </div>
 
 
         </article>
@@ -793,6 +1012,85 @@
           <div class="anuncio">         
             <a href="#"><img src="../assets/img/anuncios/pocos/bluesun.jpg" alt=""></a>        
           </div>
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/tseng-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/tseng-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div> 
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/casa-duarte.jpg" alt=""></a>        
+          </div>
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/revbras-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/revbras-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div>
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/center-tintas-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/center-tintas-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div>
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/irmao-figueiredo.jpg" alt=""></a>        
+          </div>
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/casa-eletrica.jpg" alt=""></a>        
+          </div>
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/choque-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/choque-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div>
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/cor-companhia-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/cor-companhia-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div>
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/detroit-cacamba-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/detroit-cacamba-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div>
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/hw-portoes-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/hw-portoes-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div>
         </article>
 
         <article class="busca-item" nome="casa-jardim">
@@ -822,6 +1120,19 @@
           </div> 
           <div class="anuncio">         
             <a href="#"><img src="../assets/img/anuncios/pocos/tche-floricultura.jpg" alt=""></a>        
+          </div>
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/casa-sitiante.jpg" alt=""></a>        
+          </div>
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/uniao-agro-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/uniao-agro-2.jpg" alt=""></a>
+              </div>
+            </div>                           
           </div>
           
         </article>
@@ -858,7 +1169,36 @@
               </div>
             </div>                           
           </div>
-          
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/tendedncia-moveis-planejados-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/tendedncia-moveis-planejados-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div>
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/originatto-1.png" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/originatto-2.png" alt=""></a>
+              </div>
+            </div>                           
+          </div>
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/guadalupe-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/guadalupe-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div>
         </article>
 
         <article class="busca-item" nome="calcados">
@@ -873,6 +1213,9 @@
               </div>
             </div>                           
           </div> 
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/super-forte-calcados.jpg" alt=""></a>        
+          </div>
           
         </article>
 
@@ -884,16 +1227,12 @@
           <div class="anuncio">         
             <a href="#"><img src="../assets/img/anuncios/pocos/minas-print.jpg" alt=""></a>        
           </div>
-          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
-            <div class="flipper">
-              <div class="front">
-                <img src="../assets/img/anuncios/pocos/jc-1.jpg" alt="">
-              </div>
-              <div class="back">
-                <a href=""><img src="../assets/img/anuncios/pocos/jc-2.jpg" alt=""></a>
-              </div>
-            </div>                           
-          </div> 
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/ramon-motorista.jpg" alt=""></a>        
+          </div>
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/pequenos-carretos.jpg" alt=""></a>        
+          </div>
           <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
             <div class="flipper">
               <div class="front">
@@ -917,6 +1256,9 @@
               </div>
             </div>                           
           </div>
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/son-caetano.jpg" alt=""></a>        
+          </div>
           <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
             <div class="flipper">
               <div class="front">
@@ -926,6 +1268,9 @@
                 <a href=""><img src="../assets/img/anuncios/pocos/sk-2.jpg" alt=""></a>
               </div>
             </div>                           
+          </div>
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/ls-musicacademia.jpg" alt=""></a>        
           </div>
           <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
             <div class="flipper">
@@ -954,7 +1299,7 @@
             <a href="#"><img src="../assets/img/anuncios/pocos/torno-solda-fresa.jpg" alt=""></a>        
           </div>
           <div class="anuncio">         
-            <a href="#"><img src="../assets/img/anuncios/pocos/torno-solda-fresa.jpg" alt=""></a>        
+            <a href="#"><img src="../assets/img/anuncios/pocos/mototaxi-transformers.jpg" alt=""></a>        
           </div>
           <div class="anuncio">         
             <a href="#"><img src="../assets/img/anuncios/pocos/wf-manutencao.jpg" alt=""></a>        
@@ -962,6 +1307,118 @@
           <div class="anuncio">         
             <a href="#"><img src="../assets/img/anuncios/pocos/adi-fotografia.jpg" alt=""></a>        
           </div>
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/dialogo-midia-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/dialogo-midia-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div> 
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/papa-leguas.jpg" alt=""></a>        
+          </div>
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/seguranca-total-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/seguranca-total-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div>
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/jeito-de-ser-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/jeito-de-ser-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div>
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/previne-2.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/previne-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div>
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/engel-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/engel-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div>
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/click-disk-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/click-disk-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div>
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/arco-iris-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/arco-iris-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div>
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/aguia-moto-taxi-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/aguia-moto-taxi-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div>
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/roni-art-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/roni-art-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div>
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/tervidros.jpg" alt=""></a>        
+          </div>
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/eletro-lago.jpg" alt=""></a>        
+          </div>
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/carvalho-transporte.jpg" alt=""></a>        
+          </div>   
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/hw-portoes-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/hw-portoes-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div>       
         </article>
 
         <article class="busca-item" nome="lojas">
@@ -1022,6 +1479,9 @@
               </div>
             </div>                           
           </div>
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/limpeza-cia.jpg" alt=""></a>        
+          </div>
           <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
             <div class="flipper">
               <div class="front">
@@ -1031,6 +1491,9 @@
                 <a href=""><img src="../assets/img/anuncios/pocos/pocos-piscina-2.png" alt=""></a>
               </div>
             </div>                           
+          </div>
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/pipocaldas-emporio.jpg" alt=""></a>        
           </div>
           <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
             <div class="flipper">
@@ -1051,7 +1514,7 @@
                 <a href=""><img src="../assets/img/anuncios/pocos/rerfri-pocos-2.jpg" alt=""></a>
               </div>
             </div>                           
-          </div>
+          </div>          
           <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
             <div class="flipper">
               <div class="front">
@@ -1062,11 +1525,175 @@
               </div>
             </div>                           
           </div>
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/space-vidros-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/space-vidros-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div> 
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/imperial-conveniencia-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/imperial-conveniencia-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div> 
           <div class="anuncio">         
             <a href="#"><img src="../assets/img/anuncios/pocos/roda-rodas-pneus.jpg" alt=""></a>        
           </div>
           <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/cor-companhia.jpg" alt=""></a>        
+          </div>
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/loja-colecionador.jpg" alt=""></a>        
+          </div>
+          <div class="anuncio">         
             <a href="#"><img src="../assets/img/anuncios/pocos/uai-agro-racoes.png" alt=""></a>        
+          </div>
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/jc-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/jc-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div> 
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/embalagens-sãojose-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/embalagens-sãojose-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div> 
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/repar-parafusos.jpg" alt=""></a>        
+          </div>
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/via-fight.jpg" alt=""></a>        
+          </div>
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/casa-rolamentos-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/casa-rolamentos-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div>
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/loja-borracha-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/loja-borracha-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div>
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/casa-las-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/casa-las-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div>
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/salvador-tecido-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/salvador-tecido-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div>
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/riberfuso-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/riberfuso-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div>
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/frn-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/frn-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div>
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/refri-lopes.jpg" alt=""></a>        
+          </div>
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/casa-parafusos.jpg" alt=""></a>        
+          </div>
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/cia-rolamentos.jpg" alt=""></a>        
+          </div>
+          <div class="anuncio">         
+            <a href="#"><img src="../assets/img/anuncios/pocos/parada-real.jpg" alt=""></a>        
+          </div>
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/marechal-descartaveis-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/marechal-descartaveis-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div>
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/oticas-ype-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/oticas-ype-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div>
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/troiani-rolamentos-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/troiani-rolamentos-2.jpg" alt=""></a>
+              </div>
+            </div>                           
+          </div>
+          <div class="anuncio flip-container" ontouchstart="this.classList.toggle('hover');">  
+            <div class="flipper">
+              <div class="front">
+                <img src="../assets/img/anuncios/pocos/mey-decor-1.jpg" alt="">
+              </div>
+              <div class="back">
+                <a href=""><img src="../assets/img/anuncios/pocos/mey-decor-2.jpg" alt=""></a>
+              </div>
+            </div>                           
           </div>
         </article>
 
@@ -1090,7 +1717,6 @@
   </footer>
 
   <script src="../assets/js/sistema_de_busca.js"></script>
-
 </body>
 
 </html>

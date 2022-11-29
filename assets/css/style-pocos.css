@@ -12,6 +12,7 @@ html {
   font-size: 62.5%;
   font-family: Arial, sans-serif;
 }
+
 body{
   background: linear-gradient(rgba(39, 31, 26, 0.952), rgba(27, 51, 61, 0.548)), url("https://images.unsplash.com/photo-1665935421376-062b11889523?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1029&q=80");
 	background-attachment: fixed;
@@ -256,6 +257,7 @@ article{
   justify-content:space-evenly;
   margin: 0 auto;
   margin-bottom: 150px;
+  z-index: 999;
 }
 h2{
   width: 100%;
@@ -331,8 +333,10 @@ h2.busca-titulo-3{
   margin-top: -5px;
   transition: 1s ease
 }
-.anuncio img:hover{
+.anuncio:hover img{
   transform: scale(2);
+  z-index: 99999999999;
+  position: relative;
 }
 .card--hover h3 {
   font-size: 15px;
@@ -423,6 +427,7 @@ footer a {
 	/* flip the pane when hovered */
 	.flip-container:hover .flipper, .flip-container.hover .flipper {
 		transform: rotateY(180deg);
+    z-index: 9999999999;
 	}
 
 .flip-container, .front, .back {
@@ -448,7 +453,7 @@ footer a {
 
 /* front pane, placed above back */
 .front {
-	z-index: 2;
+	z-index: 0;
 	/* for firefox 31 */
 	transform:  rotateY(0deg);
 }
@@ -456,10 +461,27 @@ footer a {
 /* back, initially hidden pane */
 .back {
 	transform: rotateY(180deg);
+  z-index: 1;
 }
 
 
 
+
+/*dark mode*/
+
+:root {
+  --body-bg: #fafafa;
+  --body-color: #555;
+  --link-color: #222;
+  --link-color-hover: #ec5840;
+}
+
+.dark-mode:root {
+  --body-bg: #212529;
+  --body-color: #899095;
+  --link-color: #dee2e6;
+  --link-color-hover: #3cc368;
+}
 
 
 
