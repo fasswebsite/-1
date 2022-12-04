@@ -8,6 +8,8 @@
   box-sizing: border-box;
 }
 
+
+
 html {
   font-size: 62.5%;
   font-family: Arial, sans-serif;
@@ -161,10 +163,9 @@ h1 {
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  margin-top: 50px;
-  width: 600PX;
-  height: 100px;
-  line-height: 100px;
+  top: 50px;
+  width: 80%;
+  line-height: 70px;
   font-size: 4em;
   color: #ffffff;
   font-family: 'Abril Fatface', cursive;
@@ -172,15 +173,15 @@ h1 {
 .texto-cidades{
   display: flex;
   justify-content: center;
+  width: 80%;
+  top:10px;
   margin: 0 auto;
-  max-width: 400px;
-  min-height: 92px;
-  max-height: 92px;
-  margin-bottom: 30px;
-  line-height: 100px;
+  margin-bottom: 60px;
+  line-height: 50px;
   font-size: 3em;
   color: #ffffff;
   font-family: 'Abril Fatface', cursive;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.678);
 }
 
 #banner img {
@@ -212,11 +213,6 @@ h1 {
   font-size: 1.6rem;
   width: 100%;
   color: #fff
-}
- 
-
-.search-box input {
-  border: none;
 }
 
 .buttons {
@@ -293,9 +289,12 @@ h2.busca-titulo-3{
   padding: 10px ;
 }
 .card {
-  -webkit-box-flex: 300px;
-  -ms-flex: 300px;
-  flex: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  -webkit-box-flex: 280px;
+  -ms-flex: 280px;
+  flex: 280px;
   margin: 15px;
   border-radius: 5px;
   border: 2px solid #c3c6ce59;
@@ -307,6 +306,8 @@ h2.busca-titulo-3{
 .card:hover {
   border-color: #ccc;
   box-shadow: 3px 3px 5px #ccc;
+  transform: scale(1.6);
+  z-index: 9;
 }
 .card:hover .card--hover {
   opacity: 1;
@@ -401,6 +402,24 @@ footer a {
   color: #6f6f6f;
 }
 
+@media (max-width: 880px) {
+  .anuncio:hover img{
+    transform: scale(1.8);
+  }
+}
+
+@media (max-width: 800px) {
+  .anuncio:hover img{
+    transform: scale(1.6);
+  }
+}
+
+@media (max-width: 700px) {
+  .anuncio:hover img{
+    transform: scale(1.5);
+  }
+}
+
 @media (max-width: 759px) {
   footer {
     display: flex;
@@ -418,6 +437,51 @@ footer a {
   }
 }
 
+@media (max-width: 620px) {
+  .anuncio:hover img{
+    transform: scale(1.7);
+  }
+}
+
+
+
+@media (max-width: 466px) {
+  h1 {
+    font-size: 3em;
+  }
+  .anuncio:hover img{
+    transform: scale(1.6);
+  }
+}
+
+@media (max-width: 425px) {
+  .anuncio:hover img{
+    transform: scale(1.4);
+  }
+}
+
+@media (max-width: 373px) {
+  .anuncio:hover img{
+    transform: scale(1.3);
+  }
+}
+@media (max-width: 341px) {
+  .anuncio:hover img{
+    transform: scale(1.2);
+  }
+}
+
+@media (max-width: 350px) {
+  h1 {
+    font-size: 2em;
+  }
+  .texto-cidades{
+    font-size: 2em;
+  }
+  .search-box input {
+    font-size: 1.3rem;
+  }
+}
 
 
 /* entire container, keeps perspective */
@@ -467,21 +531,6 @@ footer a {
 
 
 
-/*dark mode*/
-
-:root {
-  --body-bg: #fafafa;
-  --body-color: #555;
-  --link-color: #222;
-  --link-color-hover: #ec5840;
-}
-
-.dark-mode:root {
-  --body-bg: #212529;
-  --body-color: #899095;
-  --link-color: #dee2e6;
-  --link-color-hover: #3cc368;
-}
 
 
 
